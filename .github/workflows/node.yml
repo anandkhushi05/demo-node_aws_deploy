@@ -46,7 +46,7 @@ jobs:
       # Step 3: Deploy to EC2
       - name: Deploy to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@13.126.90.101 "
+          ssh -o StrictHostKeyChecking=no ubuntu@13.126.90.101 "
           cd /home/ubuntu/myapp ||
           git clone https://github.com/anandkhushi05/demo-node_aws_deploy.git /home/ubuntu/myapp &&
           cd /home/ubuntu/myapp &&
